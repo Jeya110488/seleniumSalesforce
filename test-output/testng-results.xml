@@ -1,29 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-11T21:36:53 CDT" name="SalesForce" finished-at="2026-05-11T21:36:57 CDT" duration-ms="3283">
+  <suite started-at="2026-05-27T11:24:58 CDT" name="SalesForce" finished-at="2026-05-27T11:26:22 CDT" duration-ms="84303">
     <groups>
     </groups>
-    <test started-at="2026-05-11T21:36:53 CDT" name="Login" finished-at="2026-05-11T21:36:57 CDT" duration-ms="3283">
-      <class name="seleniumSalesforce.tests.loginTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumSalesforce.tests.loginTest@6a192cfe]" started-at="2026-05-11T21:36:53 CDT" name="launchApplication" finished-at="2026-05-11T21:36:55 CDT" duration-ms="1653" status="PASS">
+    <test started-at="2026-05-27T11:24:58 CDT" name="Login" finished-at="2026-05-27T11:26:22 CDT" duration-ms="84303">
+      <class name="seleniumSalesforce.tests.RandomScenariosTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumSalesforce.tests.RandomScenariosTest@35cabb2a]" started-at="2026-05-27T11:24:58 CDT" name="launchApplication" finished-at="2026-05-27T11:25:20 CDT" duration-ms="21718" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="loginwithnopassword()[pri:0, instance:seleniumSalesforce.tests.loginTest@6a192cfe]" started-at="2026-05-11T21:36:55 CDT" name="loginwithnopassword" finished-at="2026-05-11T21:36:55 CDT" duration-ms="189" status="PASS">
+        <test-method signature="clickOnUserNameLink()[pri:1, instance:seleniumSalesforce.tests.RandomScenariosTest@35cabb2a]" started-at="2026-05-27T11:25:20 CDT" name="clickOnUserNameLink" finished-at="2026-05-27T11:25:25 CDT" duration-ms="4531" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginwithnopassword -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:seleniumSalesforce.tests.loginTest@6a192cfe]" started-at="2026-05-11T21:36:55 CDT" name="launchApplication" finished-at="2026-05-11T21:36:55 CDT" duration-ms="1" status="PASS">
+        </test-method> <!-- clickOnUserNameLink -->
+        <test-method signature="editProfileLastName()[pri:2, instance:seleniumSalesforce.tests.RandomScenariosTest@35cabb2a]" started-at="2026-05-27T11:25:25 CDT" name="editProfileLastName" finished-at="2026-05-27T11:25:31 CDT" duration-ms="6239" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="loginwithvalidcredentials()[pri:0, instance:seleniumSalesforce.tests.loginTest@6a192cfe]" started-at="2026-05-11T21:36:55 CDT" name="loginwithvalidcredentials" finished-at="2026-05-11T21:36:57 CDT" duration-ms="1416" status="PASS">
+        </test-method> <!-- editProfileLastName -->
+        <test-method signature="blockEventInCalendar()[pri:3, instance:seleniumSalesforce.tests.RandomScenariosTest@35cabb2a]" started-at="2026-05-27T11:25:31 CDT" name="blockEventInCalendar" finished-at="2026-05-27T11:25:49 CDT" duration-ms="17880" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginwithvalidcredentials -->
-      </class> <!-- seleniumSalesforce.tests.loginTest -->
+        </test-method> <!-- blockEventInCalendar -->
+        <test-method signature="blockEventWeeklyRecurrance()[pri:4, instance:seleniumSalesforce.tests.RandomScenariosTest@35cabb2a]" started-at="2026-05-27T11:25:49 CDT" name="blockEventWeeklyRecurrance" finished-at="2026-05-27T11:26:05 CDT" duration-ms="16452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blockEventWeeklyRecurrance -->
+        <test-method signature="verifyCustomizeTab()[pri:5, instance:seleniumSalesforce.tests.RandomScenariosTest@35cabb2a]" started-at="2026-05-27T11:26:05 CDT" name="verifyCustomizeTab" finished-at="2026-05-27T11:26:22 CDT" duration-ms="17282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCustomizeTab -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:seleniumSalesforce.tests.RandomScenariosTest@35cabb2a]" started-at="2026-05-27T11:26:22 CDT" name="teardown" finished-at="2026-05-27T11:26:22 CDT" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- seleniumSalesforce.tests.RandomScenariosTest -->
     </test> <!-- Login -->
   </suite> <!-- SalesForce -->
 </testng-results>
