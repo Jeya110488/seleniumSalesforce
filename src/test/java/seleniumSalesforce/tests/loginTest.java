@@ -1,25 +1,28 @@
 package seleniumSalesforce.tests;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import seleniumSalesforce.Base.baseTest;
 import seleniumSalesforce.Pages.loginPage;
-import seleniumSalesforce.Utilities.ScreenshotUtilities;
 
 public class loginTest extends baseTest {
 	loginPage loginpage;
-	ScreenshotUtilities screenshot;
-	
-	@BeforeMethod
-	public void launchApplication(){
+
+	@BeforeClass
+	public void launchApplication() throws InterruptedException {
 		launchbrower();
-		loginpage = new loginPage(driver);	
-		screenshot = new ScreenshotUtilities();
+		loginpage= new loginPage(driver);	
+		/*
+		loginpage.entervalidusername();
+		loginpage.entervalidpassword();
+		loginpage.clickOnLogin(); */	
+		Thread.sleep(10000);
 	}
 	
-	@Test(priority=1)
+	@Test(priority=2)
 	public void loginwithnopassword(){
+		driver.get("https://login.salesforce.com/");	
 		loginpage.entervalidusername();
 		loginpage.enternopassword();
 		loginpage.clickOnLogin();
@@ -27,37 +30,38 @@ public class loginTest extends baseTest {
 	
 	@Test(priority=3)
 	public void loginwithvalidcredentials(){
+		driver.get("https://login.salesforce.com/");	
 		loginpage.entervalidusername();
 		loginpage.entervalidpassword();
 		loginpage.clickOnLogin();
 	}
 	
 	@Test(priority=4)
-	public void clickonrememberme() throws InterruptedException {	
+	public void clickonrememberme() throws InterruptedException {
+		driver.get("https://login.salesforce.com/");
 		loginpage.entervalidusername();
 		loginpage.entervalidpassword();
 		loginpage.rememberme();
 		loginpage.clickOnLogin();
-		Thread.sleep(10000);
+		Thread.sleep(20000);
 		loginpage.clickonuserNavButton();
 		loginpage.clickonlogout();
-		launchbrower();
 	}
 	
-	@Test(priority=3)
+	@Test(priority=5)
 	public void clickonforgotpasswordlink() {
+		driver.get("https://login.salesforce.com/");	
 		loginpage.clickOnForgotPassword();
 	}
 
-	@Test(priority=2)
+	@Test(priority=1)
 	public void loginwithinvalidcredentials() {
 		loginpage.enterInvalidCredentials();
-		loginpage.clickOnLogin();
+		loginpage.clickOnLogin();		
 	}
 	
-	@AfterMethod
+	@AfterClass
 	public void closeDriver() {
-		screenshot.takesscreenshot(driver);
 		driver.close();
         driver=null;
 	}

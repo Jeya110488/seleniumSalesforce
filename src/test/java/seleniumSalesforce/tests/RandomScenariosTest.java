@@ -11,7 +11,7 @@ public class RandomScenariosTest extends baseTest {
 	
 	loginPage loginpage;
 	RandomScenariosPage randomScenariosPage;
-	
+
 	@BeforeClass
 	public void launchApplication() throws InterruptedException {
 		launchbrower();
@@ -22,7 +22,7 @@ public class RandomScenariosTest extends baseTest {
 		loginpage.clickOnLogin();	
 		Thread.sleep(20000);
 	}
-	
+
 	@Test(priority=1)
 	public void clickOnUserNameLink() {
 		randomScenariosPage.homePage(); 

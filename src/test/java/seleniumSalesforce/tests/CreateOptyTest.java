@@ -2,7 +2,6 @@ package seleniumSalesforce.tests;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import seleniumSalesforce.Base.baseTest;
 import seleniumSalesforce.Pages.CreateOptyPage;
@@ -21,7 +20,7 @@ public class CreateOptyTest extends baseTest{
 		loginpage.entervalidpassword();
 		loginpage.clickOnLogin();	
 		Thread.sleep(20000);
-	}
+	}	
 	
 	@Test(priority=1)
 	public void clickOnOptyDropDown() {

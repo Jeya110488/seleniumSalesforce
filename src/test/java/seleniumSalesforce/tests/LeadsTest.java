@@ -70,5 +70,4 @@ public class LeadsTest extends baseTest{
 		driver.close();
         driver=null;
 	}
-	
 }

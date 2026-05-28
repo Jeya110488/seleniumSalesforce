@@ -5,7 +5,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.HashMap;
 import java.util.Map;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class baseTest {
@@ -29,7 +28,6 @@ public class baseTest {
 			driver = new ChromeDriver(options);
 			driver.get("https://login.salesforce.com/");	
 		}
-		
 		}
 
 }

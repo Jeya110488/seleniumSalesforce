@@ -1,6 +1,5 @@
 package seleniumSalesforce.tests;
 
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import seleniumSalesforce.Base.baseTest;
@@ -11,7 +10,7 @@ public class ContactTest extends baseTest {
 	
 	loginPage loginpage;
 	ContactPage contactpage;
-	
+/*	
 	@BeforeClass
 	public void launchApplication() throws InterruptedException {
 		launchbrower();
@@ -20,6 +19,13 @@ public class ContactTest extends baseTest {
 		loginpage.entervalidusername();
 		loginpage.entervalidpassword();
 		loginpage.clickOnLogin();	
+		Thread.sleep(20000);
+	}
+*/	
+	@BeforeClass
+	public void initialDriver() throws InterruptedException{
+		loginpage= new loginPage(driver);
+		contactpage = new ContactPage(driver);	
 		Thread.sleep(20000);
 	}
 	
@@ -70,10 +76,11 @@ public class ContactTest extends baseTest {
 		contactpage.ClickOnContactTab();
 		contactpage.CheckSaveAndNewButton();
 	}
-	
+/*	
 	@AfterClass
 	public void teardown() {
 		driver.close();
         driver=null;
 	}
+	*/
 }

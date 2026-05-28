@@ -6,13 +6,14 @@
   </listeners>
   <test thread-count="5" name="Login(failed)">
     <classes>
-      <class name="seleniumSalesforce.tests.RandomScenariosTest">
+      <class name="seleniumSalesforce.tests.loginTest">
         <methods>
-          <include name="teardown"/>
-          <include name="clickOnUserNameLink"/>
           <include name="launchApplication"/>
+          <include name="clickonrememberme"/>
+          <include name="closeDriver"/>
+          <include name="clickonforgotpasswordlink"/>
         </methods>
-      </class> <!-- seleniumSalesforce.tests.RandomScenariosTest -->
+      </class> <!-- seleniumSalesforce.tests.loginTest -->
     </classes>
   </test> <!-- Login(failed) -->
 </suite> <!-- Failed suite [SalesForce] -->

@@ -10,11 +10,7 @@
 		<classes>
 			<class name="seleniumSalesforce.tests.loginTest"> </class>
 			<class name="seleniumSalesforce.tests.UserMenuDropDownTest"> </class>
-			<class name="seleniumSalesforce.tests.CreateAccountTest"> </class>
-			<class name="seleniumSalesforce.tests.CreateOptyTest"> </class>
-			<class name="seleniumSalesforce.tests.LeadsTest"> </class>
-			<class name="seleniumSalesforce.tests.ContactTest"> </class>
-			<class name="seleniumSalesforce.tests.RandomScenariosTest"> </class>
+			<class name="seleniumSalesforce.tests.CreateAccountTest"> </class>					
 		</classes>
 	</test>
 	

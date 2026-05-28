@@ -7,9 +7,11 @@ import org.openqa.selenium.support.FindBy;
 import seleniumSalesforce.Base.basePage;
 
 public class loginPage extends basePage {
+	WebDriver driver;
 	
 	public loginPage(WebDriver driver) {
 		super(driver);
+		this.driver=driver;
 	}
 
 	@FindBy(id="username")
@@ -44,12 +46,15 @@ public class loginPage extends basePage {
 		username.sendKeys("jeyakrithiga.ae8cec2d5b02@agentforce.com");
 	}
 	public void enternopassword() {
+		waitForElements(password,20);
 		password.sendKeys("");
 	}
 	public void entervalidpassword() {
+		waitForElements(password,20);
 		password.sendKeys("Jeya@11041988");
 	}
 	public void enterInvalidCredentials() {
+		waitForElements(username,20);
 		username.sendKeys("123");
 		password.sendKeys("22131");
 	}
@@ -58,6 +63,7 @@ public class loginPage extends basePage {
 		loginbutton.click();
 	}
 	public void rememberme() {
+		waitForElements(rememberme,20);
 		rememberme.click();
 	}
 	public void clickonuserNavButton() {
@@ -69,6 +75,7 @@ public class loginPage extends basePage {
 		logout.click();
 	}
 	public void clickOnForgotPassword() {
+		waitForElements(forgotpassword,20);
 		forgotpassword.click();
 		waitForElements(forgotpasswordusername,10);
 		forgotpasswordusername.sendKeys("jeyakrithiga.ae8cec2d5b02@agentforce.com");

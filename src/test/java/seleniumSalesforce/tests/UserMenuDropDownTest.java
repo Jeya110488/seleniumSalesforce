@@ -12,7 +12,6 @@ public class UserMenuDropDownTest extends baseTest {
 	loginPage loginpage;
 	UserMenuDropDownPage usermenudropdown;
 	
-	
 	@BeforeClass
 	public void launchApplication() throws InterruptedException {
 		launchbrower();

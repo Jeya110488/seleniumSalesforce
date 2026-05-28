@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumSalesforce.tests.UserMenuDropDownTest">
+      <class name="seleniumSalesforce.tests.loginTest">
         <methods>
-          <include name="editProfile"/>
-          <include name="teardown"/>
-          <include name="mySetting"/>
-          <include name="launchApplication"/>
+          <include name="initialDriver"/>
+          <include name="beforeSuiteMethod"/>
+          <include name="loginwithvalidcredentials"/>
+          <include name="clickonforgotpasswordlink"/>
+          <include name="clickonrememberme"/>
         </methods>
-      </class> <!-- seleniumSalesforce.tests.UserMenuDropDownTest -->
+      </class> <!-- seleniumSalesforce.tests.loginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

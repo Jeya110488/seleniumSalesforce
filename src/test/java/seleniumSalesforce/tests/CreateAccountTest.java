@@ -55,11 +55,10 @@ public class CreateAccountTest extends baseTest{
 		createAccountPage.lastActivityReport();
 	}
 	
-	
 	@AfterClass
 	public void teardown() {
 		driver.close();
         driver=null;
 	}
-	
+
 }
