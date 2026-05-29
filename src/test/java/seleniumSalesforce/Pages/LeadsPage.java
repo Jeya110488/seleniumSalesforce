@@ -43,7 +43,7 @@ public class LeadsPage extends basePage {
 	WebElement leadSave;
 	
 	public void LeadsTab() {
-		waitForElements(leadsTab,15);
+		waitForElements(leadsTab,30);
 		leadsTab.click();
 	}
 	

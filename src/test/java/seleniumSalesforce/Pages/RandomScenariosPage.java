@@ -62,7 +62,7 @@ public class RandomScenariosPage extends basePage {
 	@FindBy(xpath="//input[@value=' Save ']")
 	WebElement saveButton;
 	
-	@FindBy(id="userNavButton")
+	@FindBy(id="userNavLabel")
 	WebElement userNavDropDown;
 	
 	@FindBy(xpath="//a[text()='Logout']")
