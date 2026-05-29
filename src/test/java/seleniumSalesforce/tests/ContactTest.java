@@ -1,16 +1,16 @@
 package seleniumSalesforce.tests;
 
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import seleniumSalesforce.Base.baseTest;
 import seleniumSalesforce.Pages.ContactPage;
 import seleniumSalesforce.Pages.loginPage;
 
-public class ContactTest extends baseTest {
-	
+public class ContactTest extends baseTest {	
 	loginPage loginpage;
 	ContactPage contactpage;
-/*	
+
 	@BeforeClass
 	public void launchApplication() throws InterruptedException {
 		launchbrower();
@@ -21,66 +21,58 @@ public class ContactTest extends baseTest {
 		loginpage.clickOnLogin();	
 		Thread.sleep(20000);
 	}
-*/	
-	@BeforeClass
-	public void initialDriver() throws InterruptedException{
-		loginpage= new loginPage(driver);
-		contactpage = new ContactPage(driver);	
-		Thread.sleep(20000);
-	}
-	
-	@Test
+
+	@Test(priority=1)
 	public void CreateNewContact() {
 		contactpage.ClickOnContactTab();
 		contactpage.AddNewContact();
 	}
 	
-	@Test
+	@Test(priority=2)
 	public void CreateNewContactView() {
 		contactpage.ClickOnContactTab();
 		contactpage.CreateNewView();
 	}
 	
-	@Test
+	@Test(priority=3)
 	public void RecentlyCreatedContact() {
 		contactpage.ClickOnContactTab();
 		contactpage.RecentlyCreatedContact();
 	}
 
-	@Test
+	@Test(priority=4)
 	public void MyContactViewPage() {
 		contactpage.ClickOnContactTab();
 		contactpage.MyContactPage();
 	}
 	
-	@Test
+	@Test(priority=5)
 	public void RecentContactPage() {
 		contactpage.ClickOnContactTab();
 		contactpage.RecentContacts();
 	}
 	
-	@Test
+	@Test(priority=6)
 	public void ContactPageError() {
 		contactpage.ClickOnContactTab();
 		contactpage.CheckForContactError();
 	}
 	
-	@Test
+	@Test(priority=7)
 	public void ContactCancelButton() {
 		contactpage.ClickOnContactTab();
 		contactpage.CheckContactCancelButton();
 	}
 	
-	@Test
+	@Test(priority=8)
 	public void ContactSaveAndNew() {
 		contactpage.ClickOnContactTab();
 		contactpage.CheckSaveAndNewButton();
 	}
-/*	
+	
 	@AfterClass
 	public void teardown() {
 		driver.close();
         driver=null;
 	}
-	*/
 }

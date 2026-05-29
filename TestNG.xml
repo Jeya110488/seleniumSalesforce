@@ -8,10 +8,10 @@
     
 	<test name="Login">
 		<classes>
-			<class name="seleniumSalesforce.tests.CreateOptyTest"> </class>			
-			<class name="seleniumSalesforce.tests.LeadsTest"> </class>			
+			<class name="seleniumSalesforce.tests.CreateOptyTest"> </class>						
 			<class name="seleniumSalesforce.tests.ContactTest"> </class>			
-			<class name="seleniumSalesforce.tests.RandomScenariosTest"> </class>				
+			<class name="seleniumSalesforce.tests.RandomScenariosTest"> </class>	
+			<class name="seleniumSalesforce.tests.LeadsTest"> </class>				
 		</classes>
 	</test>
 	

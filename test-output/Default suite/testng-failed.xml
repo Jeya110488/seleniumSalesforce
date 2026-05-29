@@ -3,15 +3,20 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="seleniumSalesforce.tests.loginTest">
+      <class name="seleniumSalesforce.tests.ContactTest">
         <methods>
-          <include name="initialDriver"/>
-          <include name="beforeSuiteMethod"/>
-          <include name="loginwithvalidcredentials"/>
-          <include name="clickonforgotpasswordlink"/>
-          <include name="clickonrememberme"/>
+          <include name="MyContactViewPage"/>
+          <include name="ContactCancelButton"/>
+          <include name="teardown"/>
+          <include name="CreateNewContactView"/>
+          <include name="RecentlyCreatedContact"/>
+          <include name="launchApplication"/>
+          <include name="RecentContactPage"/>
+          <include name="ContactSaveAndNew"/>
+          <include name="CreateNewContact"/>
+          <include name="ContactPageError"/>
         </methods>
-      </class> <!-- seleniumSalesforce.tests.loginTest -->
+      </class> <!-- seleniumSalesforce.tests.ContactTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

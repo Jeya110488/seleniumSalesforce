@@ -62,7 +62,7 @@ public class CreateOptyPage extends basePage {
 	WebElement runReportButton;
 	
 	public void clickOnOptyTab() {
-		waitForElements(OptyTab,20);
+		waitForElements(OptyTab,30);
 		OptyTab.click();
 	}
 	
@@ -87,17 +87,17 @@ public class CreateOptyPage extends basePage {
 	}
 	
 	public void optyPipelineReport() {
-		waitForElements(optyPipeline,10);
+		waitForElements(optyPipeline,20);
 		optyPipeline.click();
 	}
 	
 	public void stuckOptyLink() {
-		waitForElements(stuckOptyLink,10);
+		waitForElements(stuckOptyLink,20);
 		stuckOptyLink.click();
 	}
 	
 	public void quarterlyReport() {
-		waitForElements(intervalDropDown,10);
+		waitForElements(intervalDropDown,20);
 		Select intervalSelect = new Select(intervalDropDown);
 		intervalSelect.selectByVisibleText("Current FQ");
 		
