@@ -43,6 +43,7 @@ public class LeadsPage extends basePage {
 	WebElement leadSave;
 	
 	public void LeadsTab() {
+		driver.switchTo().parentFrame();
 		waitForElements(leadsTab,30);
 		leadsTab.click();
 	}
